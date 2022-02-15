@@ -1,0 +1,37 @@
+
+
+// auth styles
+.link{
+    text-decoration: none;
+
+    &:active{
+        color: black;
+    }
+}
+ //home styles
+.home{
+    color: #7e57c2;
+    font-size: 4rem;
+    width: 70%;
+    margin: 18rem auto;
+    text-align: center;
+}
+
+//nav bar styles
+
+.nav_log, .nav_reg{
+    text-decoration: none;
+    color: white;
+    margin-right: 1rem;
+
+    &:hover{
+        color: #ffe7ff;
+    }
+}
+.nav_reg{
+    text-transform: lowercase;
+}
+.avatar{
+    transform: translateY(7px);
+    margin-left: .5rem;
+}
