@@ -54,6 +54,11 @@ const NavBar = () => {
             </Link>
           </Typography>
           <Typography component='li'>
+            <Link to="/crud" className="nav_log">
+              crud
+            </Link>
+          </Typography>
+          <Typography component='li'>
             <Link to={user?.email ? "/" : "/register"} className="nav_reg">
               {user?.email ? `${user.email}`:"register"}
             </Link>

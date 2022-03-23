@@ -7,6 +7,7 @@ import Register from './components/auth/Register';
 import NotFound from './components/utils/NotFound'
 import Home from "./components/Home";
 import Footer from "./components/Footer";
+import FirestoreCrud from "./components/FirestoreCrud";
 
 
 
@@ -31,12 +32,15 @@ function App() {
     <ThemeProvider theme={theme}>
       <Router>
         <NavBar/>
+          <div style={{marginTop:"4rem"}}>
         <Routes>
-            <Route path ='/' element={<Home/>}/>
+          <Route path ='/' element={<Home/>}/>
             <Route path ='/login' element={<Login/>}/>
             <Route path ='/register' element={<Register/>}/>
+            <Route path ='/crud' element={<FirestoreCrud/>}/>
             <Route path ='*' element={<NotFound/>}/>
         </Routes>
+          </div>
         <Footer/>
       </Router>
     </ThemeProvider>
